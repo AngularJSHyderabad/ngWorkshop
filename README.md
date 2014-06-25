@@ -4,7 +4,7 @@ ngWorkshop
 This project contains details and code samples for day long workshop in Hyderabad.
 
 
-# IDEAS   (Please do a research and see how and which one we want to pick from list) - Srini \ Keerti \ Ravi
+### IDEAS   (Please do a research and see how and which one we want to pick from list) - Srini \ Keerti \ Ravi
 
 1. UI Job seekers Portal
 
@@ -15,7 +15,7 @@ This project contains details and code samples for day long workshop in Hyderaba
 3. http://findmypair.com   -   Pair Programming
 
 
-# TODO
+### TODO
 
 1. Find a location where we can host this workshop?  Media Mint \  Azri  \ Green Byte Technologies
 
