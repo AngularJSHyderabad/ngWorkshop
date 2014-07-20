@@ -1,0 +1,27 @@
+<div class="col-md-8">
+  <a href="{{itemDetails.productUrl}}" target="_blank">{{itemDetails.name}}</a>
+  <br />
+  <div>{{itemDetails.shortDescription}}</div>
+  <br>
+  Available Online: <span ng-show="itemDetails.availableOnline" style="color: green;">Yes</span><span ng-hide="itemDetails.availableOnline" style="color: red;">No</span>
+  <br />
+  <br />
+  <div>
+    <div class="col-md-6">Sale Price</div>
+    <div class="col-md-6">{{itemDetails.salePrice}}</div>
+  </div>
+  <div>
+    <div class="col-md-6">Std Shipping Price</div>
+    <div class="col-md-6">{{itemDetails.standardShipRate}}</div>
+  </div>
+  <div>
+    <div class="col-md-6">Overnight Shipping Rate</div>
+    <div class="col-md-6">{{itemDetails.overnightShippingRate}}</div>
+  </div>
+</div>
+<div class="col-md-4">
+  <img ng-src="{{itemDetails.largeImage}}" alt="{{itemDetails.shortDescription}}">
+  <div style="float: none; margin: 0 auto;">
+      <rating data-rating-image="{{itemDetails.customerRatingImage}}" data-avg-rating="{{itemDetails.customerRating}}"></rating>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="col-md-3">
+	<div class="row" style="background: rgb(248, 248, 248); border-radius: 10px; height: 60px;">
+		<div class="col-md-12" style="padding-top: 7px;">
+		<span style="font-weight: bold;">Category:</span> 
+		</div>
+		<div class="col-md-12">
+			<select ng-model="category" ng-options="c.name for c in categories" ng-change="categorySelected()"></select>
+		</div>
+	</div> 
+	<div class="row" style="height: 20px;"></div>
+	<div class="row" style="background: rgb(248, 248, 248); border-radius: 10px; height: 60px;">
+		<div class="col-md-12" style="padding-top: 7px;">
+		    <span style="font-weight: bold;">Sub-Category:</span>
+		</div>
+		<div class="col-md-12">
+			<select ng-model="subCategory" ng-options="c.name for c in subCategories" ng-change="subCategorySelected()"></select>
+		</div>
+	</div>
+    <div class="row" style="height: 20px;"></div>
+    <div class="row" style="background: rgb(248, 248, 248); border-radius: 10px; height: 60px;">
+        <div class="col-md-12">
+            Search
+        </div>
+        <div class="col-md-12">
+            <input type="text" ng-model="searchText" />
+        </div>
+    </div>
+    <div class="row" style="height: 20px;"></div>
+    <div class="row" style="background: rgb(248, 248, 248); border-radius: 10px; height: 60px;">
+        <div class="col-md-12">
+            Sort by
+        </div>
+        <div class="col-md-12">
+            <select ng-model="sortExpression">
+                <option value="name">Name</option>
+                <option value="salePrice">Sale Price</option>
+                <option value="customerRating">Rating</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-9">
+  <div ng-repeat="item in items | filter: searchText | orderBy: sortExpression" class="col-md-5 col-md-offset-1 text-center" style="margin-bottom: 20px; border:1px solid rgba(0, 0, 0, 0.17); padding: 10px; height: 255px; background: rgb(248, 248, 248);">
+	<single-item />
+  </div>
+</div>

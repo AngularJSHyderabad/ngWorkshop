@@ -1,0 +1,20 @@
+<div class="row">
+	<div class="col-md-12">
+		<img ng-src="{{item.thumbnailImage}}" alt="{{item.name}}" height="150" width="150" />
+	</div>
+	<div class="col-md-12" style="padding-top: 10px; padding-bottom:10px;">
+		<div class="col-md-6">
+			Price: <span>{{item.salePrice | currency}}</span>	
+		</div>
+		<div class="col-md-6">
+			<!--Rating: <img ng-src="{{item.customerRatingImage}}" ng-show="item.customerRatingImage" title="Average rating: {{item.customerRating}}">
+            <span ng-hide="item.customerRatingImage">No ratings yet!</span>-->
+            <rating data-rating-image="{{item.customerRatingImage}}" data-avg-rating="{{item.customerRating}}"></rating>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12" style="background-color: rgb(0, 120, 224); min-height: 40px;">
+			<a href="#/item/{{item.itemId}}" style="color: white; text-decoration: none;">{{item.name}}</a>
+		</div>
+	</div>
+</div>

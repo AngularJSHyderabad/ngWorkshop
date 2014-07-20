@@ -1,29 +1,15 @@
 ngWorkshop
 ==========
 
-This project contains details and code samples for day long workshop in Hyderabad.
+This project contains code of the sample app that we asked the participants to build during workshop in Hyderabad at Fission Labs.
 
 
-### IDEAS   (Please do a research and see how and which one we want to pick from list) - Srini \ Keerti \ Ravi
+### To run the application
 
-1. UI Job seekers Portal
+1. Install Node.js
 
-    What is the public REST API which we can use to show all available jobs in India (may be just in Hyderabad).
+2. In the sample, go to src/js/services/appValues.js and replace value of API Key with your own Walmart Key
 
-2. Used Car Search Portal
+3. Open a command prompt. In the command prompt, move to the root folder of the sample code, type grunt and hit enter
 
-3. http://findmypair.com   -   Pair Programming
-
-
-### TODO
-
-1. Find a location where we can host this workshop?  Media Mint \  Azri  \ Green Byte Technologies
-
-2. Need to publish a Date, Time and also accept applications for attending workshop?  July-19th (or) 26th
-
-3. Find a sponsor for Food?
-
-4. Prepare workshop plan and have a template \ seed project ready to use?  (Srini \ Keerti \ Ravi)
-
-
-
+4. Open a browser and change the URL to: http://localhost:9000
